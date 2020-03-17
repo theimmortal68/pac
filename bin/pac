@@ -127,6 +127,10 @@ case "$1" in
 		shift
 		CMD_ARGS="-R $@"
 		;;
+	'purge')
+		shift
+		CMD_ARGS="-Rn $@"
+		;;
 	*)
 		log_error "Unknown command: $1"
 		exit 1
